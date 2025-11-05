@@ -1,0 +1,31 @@
+{
+  "name": "profile-image-api",
+  "version": "1.0.0",
+  "description": "API untuk generate profile image menggunakan Canvas, siap deploy di Pterodactyl",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "canvas",
+    "profile",
+    "api",
+    "pterodactyl",
+    "express"
+  ],
+  "author": "yudzxml",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "canvafy": "^7.2.1",
+    "axios": "^1.7.9",
+    "sharp": "^0.32.6",
+    "form-data": "^4.0.0",
+    "file-type": "^21.0.0",
+    "javascript-obfuscator": "^4.1.1",
+    "js-deobfuscator": "^1.1.7",
+    "moment-timezone": "^0.5.45",
+    "@putuofc/assetsku": "*",
+    "express": "^4.18.2"
+  }
+}
