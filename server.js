@@ -12,6 +12,15 @@ const { ofuscateFromUrl, YudzCdnV2 } = require('./lib/obfuscate');
 
 const app = express();
 
+app.get("/", (req, res) => {
+  res.status(200).json({
+    author: "Yudzxml",
+    status: "success",
+    message: "✅ Canvas API is online and running smoothly.",
+    timestamp: new Date().toISOString(),
+  });
+});
+
 app.get("/welcomev1", async (req, res) => {
   try {
     const { generateWelcomeImageFromURL } = require("./lib/welcomev1");
