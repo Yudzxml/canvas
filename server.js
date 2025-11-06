@@ -335,6 +335,7 @@ app.get('/profile', async (req, res) => {
       'role',
       'level',
       'level_cache',
+      'money',
       'profilePicUrl',
       'backgroundUrl'
     ];
@@ -357,6 +358,7 @@ app.get('/profile', async (req, res) => {
   role: req.query.role,  
   level: req.query.level,  
   level_cache: Number(req.query.level_cache),  
+  money: req.query.money,  
   profilePicUrl: decodeURIComponent(req.query.profilePicUrl),  
   backgroundUrl: decodeURIComponent(req.query.backgroundUrl)  
 };
